@@ -1,0 +1,7 @@
+The above NodeJS application is launched on each core of our system. Where master process accepts the request and distributes across all worker.
+
+autocannon tools performance
+---------- ----- -----------
+The above image showed that the server can respond to 917 requests when running 500 concurrent connections for 10.15 seconds. The average request/second is 27.1 seconds. 
+
+So, using the cluster module we can handle more requests. But, sometimes it is not enough, then the option is horizontal scaling.

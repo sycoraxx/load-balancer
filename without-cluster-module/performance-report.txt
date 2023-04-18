@@ -1,0 +1,5 @@
+The above code listening on port 3000 and send Public Key as a response. Generating an RSA key is CPU-intensive work. Here only one NodeJS instance working in a single core. To see the performance, we have used autocannon tools to test our server.
+
+autocannon tools performance
+---------- ----- -----------
+The above image showed that the server can respond to 1000 requests when running 500 concurrent connections for 10.15 seconds. The average request/second is 18.4 seconds. 
